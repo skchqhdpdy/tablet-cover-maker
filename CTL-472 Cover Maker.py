@@ -1,10 +1,10 @@
-#Wacom CTL 472
+#Wacom CTL-472
 
 from PIL import Image
 import requests
 import os
 
-requestHeaders = {"User-Agent": "CTL 472 Cover Maker"}
+requestHeaders = {"User-Agent": "CTL-472 Cover Maker"}
 img_size = (1050, 730)
 
 def KillProgram(): os.system(f"taskkill /f /pid {os.getpid()}")
@@ -39,4 +39,4 @@ with Image.open("CTL472.jpg") as img:
 
 os.remove("CTL472.jpg")
 
-input("\nCTL472-1050x730.jpg \nDone\nexit this program")
+input("\nCTL472-1050x730.jpg \nDone (완료!)\nexit this program (프로그램을 종료하세요!)")
